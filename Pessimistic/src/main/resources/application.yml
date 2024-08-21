@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: Pessimistic
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comment: true
+# 로그 보기
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+        orm:
+          jdbc:
+            bind: TRACE
